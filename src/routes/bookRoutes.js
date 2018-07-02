@@ -1,4 +1,5 @@
 const express = require('express');
+
 const bookRouter = express.Router();
 
 function router(nav) {
@@ -51,6 +52,7 @@ function router(nav) {
       author: 'Lev Nikolayevich Tolstoy',
       read: false
     }];
+
   bookRouter.route('/')
     .get((req, res) => {
       res.render(
@@ -77,6 +79,5 @@ function router(nav) {
     });
   return bookRouter;
 }
-
 
 module.exports = router;

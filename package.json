@@ -5,8 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "set DEBUG=app & nodemon app.js",
-    "lint": ".\\node_modules\\.bin\\eslint.cmd app.js"
+    "start": "DEBUG=app nodemon app.js",
+    "lint": "eslint app.js"
   },
   "author": "",
   "license": "ISC",

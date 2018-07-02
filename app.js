@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
     'index',
     {
       nav: [{ link: '/books', title: 'Books' },
-      { link: '/authors', title: 'Authors' }],
+        { link: '/authors', title: 'Authors' }],
       title: 'Library'
     }
   );
