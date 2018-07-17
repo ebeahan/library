@@ -1,6 +1,7 @@
 #!/bin/sh
 
 # Install Node.js
+apt-get update
 apt-get install --yes curl
 curl --silent --location https://deb.nodesource.com/setup_10.x | bash -
 apt-get install --yes nodejs
